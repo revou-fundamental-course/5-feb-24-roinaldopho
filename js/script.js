@@ -25,16 +25,16 @@ function convert(degree) {
 function rumus(degree) {
     if (degree == "C") {
     var inputValue = document.getElementById("celsius").value;
-    document.getElementById("rumusCF").innerHTML = "°C = (°F x 9 / 5) + 32<br>";
-    document.getElementById("rumusCF").innerHTML += "°C = (" + inputValue + " x 9 / 5) + 32<br>";
-    document.getElementById("rumusCF").innerHTML += "°C = " + Math.round(inputValue * 9 / 5 + 32) + "°C";
+    document.getElementById("rumusCF").innerHTML = "°F = (°C x 9 / 5) + 32<br>";
+    document.getElementById("rumusCF").innerHTML += "°F = (" + inputValue + " x 9 / 5) + 32<br>";
+    document.getElementById("rumusCF").innerHTML += "°F = " + Math.round(inputValue * 9 / 5 + 32) + "°F";
     }
 
     if (degree == "F") {
         var inputValue = document.getElementById("farenheit").value;
-        document.getElementById("rumusFC").innerHTML = "°F = (°C - 32) x 5 / 9<br>";
-        document.getElementById("rumusFC").innerHTML += "°F = (" + inputValue + "-32) x 5 / 9<br>";
-        document.getElementById("rumusFC").innerHTML += "°F = " + Math.round((inputValue-32) * 5 / 9) + "°F";
+        document.getElementById("rumusFC").innerHTML = "°C = (°F - 32) x 5 / 9<br>";
+        document.getElementById("rumusFC").innerHTML += "°C = (" + inputValue + "-32) x 5 / 9<br>";
+        document.getElementById("rumusFC").innerHTML += "°C = " + Math.round((inputValue-32) * 5 / 9) + "°C";
     }
 
 }
