@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Konversi Suhu</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="/js/script.js"></script> 
+</head>
+<body>
+	<p>Website ini digunakan untuk melaukan konversi satuan suhu derajat Celcius ke derajat Farenheit, 
+    begitu juga sebaliknya :)</p>
+	<br>
+    <p>Celsius(°C)</p>
+	<div class="container">
+		<input id="celsius" placeholder="Masukkan Suhu dalam Celsius">
+		<button type="button" onclick="convert('C')">Calculate</button>
+        <button type="button" onclick="rumus('C')">Lihat Rumus</button>
+		<p>Hasil Konversi: <span id="resultCF"></span></p>
+		<p id="rumusCF"></p>
+		
+	</div>
+    <br>
+    <p>Farenheit(°F)</p>
+    <div class="container">
+		<input id="farenheit" placeholder="Masukkan Suhu dalam Farenheit">
+		<button type="button" onclick="convert('F')">Calculate</button>
+		<button type="button" onclick="rumus('F')">Lihat Rumus</button>
+		<p>Hasil Konversi: <span id="resultFC"></span></p>
+		<p id="rumusFC"></p>
+	</div>
+</body>
+</html>
